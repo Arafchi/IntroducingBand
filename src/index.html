@@ -6,39 +6,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/output.css">
-    <link rel="icon" href="https://s3.ap-northeast-2.amazonaws.com/img.kormedi.com/news/article/__icsFiles/artimage/2016/12/12/c_km601/403416_540_1.jpg">
-    <script src="js/main.js"></script>
+    <link rel="icon"
+        href="https://s3.ap-northeast-2.amazonaws.com/img.kormedi.com/news/article/__icsFiles/artimage/2016/12/12/c_km601/403416_540_1.jpg">
+    <script src="js/animation.js"></script>
     <title>Document</title>
-    
-    <style>
-        
-    </style>
 </head>
 
 <body>
-    <header class="flex flex-row w-auto h-32 bg-slate-800">
+    <header class="flex flex-row w-auto h-[100px] bg-slate-800">
         <h1 class="m-auto text-center text-3xl md:text-6xl text-yellow-500 font-PCP">Cheeze Storage</h1>
         <!--수평/수직 정렬, over플로우가 일어나면-->
     </header>
 
     <main class="bg-slate-700">
-        <div id="CheezePf" class="relative h-[3000px]"> <!--Who is Cheeze?-->
-            <div class="sticky top-0 h-screen bg-no-repeat bg-cover bg-center bg-[url('https://i.namu.wiki/i/I_AqoGnc5szb4aVYK59wswlpHvCCLaKbbQhJQAoHyYS7XCzuvyv2t_Nm3H1Z4HYc0VjmcSY4L2SSKvh_kng7ipWf7yVuP8Vkf76t8BLzL006cfFyHzsy5xIrpltzcMWY_Glh4zxrKfi6J38SuQSa7w.webp')]">
-                <div id="blackWindow" class="h-screen opacity-0 bg-black">
-                    <div class="z-10 absolute w-full">
-                        <h1 id="sec1-1" class="relative top-[600px] mt-[40vh]  text-white opacity-100 text-4xl md:text-8xl text-center">국내 원탑 인디 가수</h1>
-                        <h1 id="sec1-2" class="relative top-[600px]   text-white opacity-100 text-6xl md:text-9xl text-center">CHEEZE</h1>
+        <div id="CheezePf" class="h-[3000px]"> <!--Who is Cheeze?-->
+            <div
+                class="sticky top-0 h-screen bg-no-repeat bg-cover bg-center bg-[url('https://i.namu.wiki/i/I_AqoGnc5szb4aVYK59wswlpHvCCLaKbbQhJQAoHyYS7XCzuvyv2t_Nm3H1Z4HYc0VjmcSY4L2SSKvh_kng7ipWf7yVuP8Vkf76t8BLzL006cfFyHzsy5xIrpltzcMWY_Glh4zxrKfi6J38SuQSa7w.webp')]">
+                <div id="container" class="relative">
+                    <div id="blackWindow" class="absoulte h-screen opacity-0 bg-black"></div>
+
+                    <!--id=sec* div를 수직 정렬이 어려워서 일단 mt-[40vh]로 대충 맞춰놓음-->
+                    <div>
+                        <div id="sec1" class="absolute mt-[40vh] w-full">
+                            <h1 class="text-white opacity-100 text-4xl md:text-8xl text-center">국내 원탑 인디 가수</h1>
+                            <h1 class="text-white opacity-100 text-6xl md:text-9xl text-center">CHEEZE</h1>
+                        </div>
+                        <div id="sec2" class="absolute mt-[40vh] w-full">
+                            <h1 class="text-white opacity-100 text-4xl md:text-8xl text-center">Everything</h1>
+                            <h1 class="text-white opacity-100 text-6xl md:text-9xl text-center">to</h1>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            
-
         </div>
         <div id="RcmdSong" class="h-[2000px]"> <!--Recommend-->
-            <div class="sticky top-0 h-screen bg-no-repeat bg-cover bg-center bg-[url('https://i.ytimg.com/vi/rr6ubS7dZGU/maxresdefault.jpg')]"></div>
+            <div
+                class="sticky top-0 h-screen bg-no-repeat bg-cover bg-center bg-[url('https://pbs.twimg.com/media/D7G3uA5VUAAFJ9l?format=jpg&name=large')]">
+            </div>
         </div>
 
     </main>
 
 </body>
+
 </html>

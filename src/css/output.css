@@ -554,6 +554,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -570,14 +604,6 @@ video {
   top: 0px;
 }
 
-.top-\[600px\] {
-  top: 600px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -590,8 +616,8 @@ video {
   display: flex;
 }
 
-.h-32 {
-  height: 8rem;
+.h-\[100px\] {
+  height: 100px;
 }
 
 .h-\[2000px\] {
@@ -642,6 +668,78 @@ video {
   animation: fadeOut 0.5s forwards;
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes btmUp {
+  0% {
+    top: 100px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.animate-hideFadeDown {
+  animation: fadeOut 0.5s forwards, btmUp 0.5s forwards reverse;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes midUp {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: -100px;
+  }
+}
+
+.animate-hideFadeUp {
+  animation: fadeOut 0.5s forwards, midUp 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 80%;
+  }
+}
+
+@keyframes midUp {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: -100px;
+  }
+}
+
+.animate-showFadeDown {
+  animation: fadeIn 0.5s forwards, midUp 0.5s forwards reverse;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0%;
@@ -662,8 +760,8 @@ video {
   }
 }
 
-.animate-fadeUp {
-  animation: fadeIn, btmUp 0.5s forwards;
+.animate-showFadeUp {
+  animation: fadeIn 0.5s forwards, btmUp 0.5s forwards;
 }
 
 .flex-row {
@@ -689,8 +787,8 @@ video {
   background-image: url('https://i.namu.wiki/i/I_AqoGnc5szb4aVYK59wswlpHvCCLaKbbQhJQAoHyYS7XCzuvyv2t_Nm3H1Z4HYc0VjmcSY4L2SSKvh_kng7ipWf7yVuP8Vkf76t8BLzL006cfFyHzsy5xIrpltzcMWY_Glh4zxrKfi6J38SuQSa7w.webp');
 }
 
-.bg-\[url\(\'https\:\/\/i\.ytimg\.com\/vi\/rr6ubS7dZGU\/maxresdefault\.jpg\'\)\] {
-  background-image: url('https://i.ytimg.com/vi/rr6ubS7dZGU/maxresdefault.jpg');
+.bg-\[url\(\'https\:\/\/pbs\.twimg\.com\/media\/D7G3uA5VUAAFJ9l\?format\=jpg\&name\=large\'\)\] {
+  background-image: url('https://pbs.twimg.com/media/D7G3uA5VUAAFJ9l?format=jpg&name=large');
 }
 
 .bg-cover {

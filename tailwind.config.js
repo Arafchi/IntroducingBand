@@ -10,8 +10,18 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 0.5s forwards",
         fadeOut: "fadeOut 0.5s forwards",
-        btmUp: "btmUp 1s forwards",
-        fadeUp: "fadeIn,btmUp 0.5s forwards"
+        
+        // 위로 fade하며 생성하기
+        showFadeUp: "fadeIn 0.5s forwards, btmUp 0.5s forwards",
+        
+        // 위로 fade하며 사라지기
+        hideFadeUp: "fadeOut 0.5s forwards, midUp 0.5s forwards",
+
+        // 아래로 fade하며 생성하기
+        showFadeDown: "fadeIn 0.5s forwards, midUp 0.5s forwards reverse",
+
+        // 아래로 fade하며 사라지기
+        hideFadeDown: "fadeOut 0.5s forwards, btmUp 0.5s forwards reverse"
       },
       keyframes: {
         fadeIn: {
@@ -25,8 +35,11 @@ module.exports = {
         btmUp: {
           '0%': { top: "100px" },
           '100%': { top: "0px" }
+        },
+        midUp: {
+          '0%': { top: "0px" },
+          '100%': { top: "-100px" }
         }
-
       }
     },
   },
