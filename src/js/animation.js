@@ -2,7 +2,7 @@ console.log(window.scrollY);
 
 setInterval(() => {
     var elem = document.querySelector("#CheezePf #blackWindow");
-    if (200 <= window.scrollY) {
+    if (100 <= window.scrollY) {
         elem.classList.remove("animate-fadeOut");
         elem.classList.add("animate-fadeIn");
 
@@ -16,7 +16,7 @@ setInterval(() => {
 
 setInterval(() => {
     var elem = document.querySelector("#RcmdSong #blackWindow");
-    if (6300 <= window.scrollY) {
+    if (6200 <= window.scrollY) {
         elem.classList.remove("animate-fadeOut");
         elem.classList.add("animate-fadeIn");
 
@@ -38,7 +38,7 @@ setInterval(() => {
     var elems = document.querySelectorAll("#CheezePf [id^='sec']");
     for(var i = 0;i<elems.length;i++){
         var elem = elems[i];
-        if ( (i*1000+200) <= window.scrollY && window.scrollY <= (i*1000+600) ) {
+        if ( (i*1000+100) <= window.scrollY && window.scrollY <= (i*1000+800) ) {
             elem.classList.add("animate-showFadeUp");
             elem.classList.remove("animate-hideFadeUp");
         }
@@ -54,7 +54,7 @@ setInterval(() => {
     var elems = document.querySelectorAll("#RcmdSong [id^='sec']");
     for(var i = 0;i<elems.length;i++){
         var elem = elems[i];
-        if ( (i*1000+6300) <= window.scrollY && window.scrollY <= (i*1000+6700) ) {
+        if ( (i*1000+6200) <= window.scrollY && window.scrollY <= (i*1000+6900) ) {
             elem.classList.add("animate-showFadeUp");
             elem.classList.remove("animate-hideFadeUp");
         }
